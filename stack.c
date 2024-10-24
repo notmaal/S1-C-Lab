@@ -33,7 +33,7 @@ void main(){
             PEEK();
             break;      
         default:
-            printf("Wrong Choice :(");
+            printf("\nWrong Choice :(\n");
             break;
         }
 

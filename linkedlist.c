@@ -1,5 +1,3 @@
-/* Haven't tested the code*/
-
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -20,9 +18,9 @@ node *current;
 void main(){
     int is_running=1, ch;
     while(is_running){
-        printf("\n1.Insert at beginning\n2.Insert at end\n3.Insert at position\n4.Delete\n5.Display\n6.Exit\nEnter your choice: ");
-        scanf("%d", ch);
-        switch (ch)
+        printf("\n\n1.Insert at beginning\n2.Insert at end\n3.Insert at position\n4.Delete\n5.Display\n6.Exit\nEnter your choice: ");
+        scanf("%d", &ch);
+        switch(ch)
         {
         case 1:
             insatbeg();
@@ -34,16 +32,16 @@ void main(){
             insatpos();
             break;
         case 4:
-            display();
+            delete();
             break;
         case 5:
-            delete();
+            display();
             break;
         case 6:
             is_running = 0;
             break;
         default:
-        printf("\nWrong Choice :(\n");
+            printf("\nWrong Choice :(\n");
             break;
         }
     }

@@ -20,3 +20,4 @@ Lab Cycle 2
 5.	Topological Sorting
 6.	DFS
 7.	BFS
+8.	boomer
